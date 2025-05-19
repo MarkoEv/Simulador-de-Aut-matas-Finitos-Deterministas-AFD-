@@ -27,7 +27,7 @@ Herramienta web interactiva para diseñar, configurar y probar Autómatas Finito
 2. **Alfabeto**:  
    - Define los símbolos válidos **separados por comas** (ej: `0,1`, `a,b,c`, `x,y,z`).  
 3. **Genera transiciones**:  
-   - Haz clic en **"Generar Campos de Transición"** para crear la tabla de transiciones.  
+   - Haz clic en **"Generar Transiciones"** para crear la tabla de transiciones.  
 4. **Estado inicial**:  
    - Selecciona el estado inicial desde el menú desplegable.  
 5. **Estados finales**:  
