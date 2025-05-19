@@ -19,21 +19,73 @@ Herramienta web interactiva para diseñar, configurar y probar Autómatas Finito
 ✅ **Sin dependencias externas**:  
    - Solo requiere un navegador moderno.  
 ---
+# **📌 Cómo Usar el Simulador de AFD**  
 
-## **🚀 Cómo Usar**  
-### **1. Configura el AFD**  
-   - Ingresa los **estados** separados por comas (ej: `q0,q1,q2`).  
-   - Ingresa los **símbolos del alfabeto** (ej: `0,1`).  
-   - Haz clic en **"Generar Campos de Transición"**.  
-   - Selecciona el **estado inicial** y los **estados finales**.  
-   - Completa las **transiciones** en la tabla generada.  
+### **1️⃣ Configuración del Autómata**  
+1. **Estados**:  
+   - Ingresa los nombres de los estados **separados por comas** (ej: `q0,q1,q2` o `A,B,C`).  
+2. **Alfabeto**:  
+   - Define los símbolos válidos **separados por comas** (ej: `0,1`, `a,b,c`, `x,y,z`).  
+3. **Genera transiciones**:  
+   - Haz clic en **"Generar Campos de Transición"** para crear la tabla de transiciones.  
+4. **Estado inicial**:  
+   - Selecciona el estado inicial desde el menú desplegable.  
+5. **Estados finales**:  
+   - Ingresa los estados de aceptación **separados por comas** (ej: `q0` o `A,C`).  
 
-### **2. Prueba una Cadena**  
-   - Escribe una cadena (ej: `0101`).  
-   - Haz clic en **"Probar Cadena"**.  
-   - Verás si es aceptada y el camino recorrido.  
+### **2️⃣ Define las Transiciones**  
+- Completa la tabla generada:  
+  - Para cada estado (`q0`, `q1`, etc.) y cada símbolo (`0`, `a`, `x`, etc.), selecciona el **estado destino**.  
+  - Ejemplo para un AFD que cuenta "a"s pares:  
+    - Desde `q0`: `a → q1`, `b → q0`, `c → q0`.  
+    - Desde `q1`: `a → q0`, `b → q1`, `c → q1`.  
+
+### **3️⃣ Prueba Cadenas**  
+1. Escribe una cadena en el campo **"Cadena a evaluar"** (ej: `aab`, `101`, `xyz`).  
+2. Haz clic en **"Probar Cadena"**.  
+3. **Resultado**:  
+   - ✅ **Aceptada**: Si termina en un estado final.  
+   - ❌ **Rechazada**: Si termina en un estado no final.  
+   - 📜 **Camino**: Se muestra la secuencia de estados recorridos.  
 
 ---
+
+### **🌐 Ejemplos Prácticos**  
+#### **Ejemplo 1: AFD que acepta cadenas con número par de "1"s**  
+- **Estados**: `q0, q1`  
+- **Alfabeto**: `0,1`  
+- **Estado inicial**: `q0`  
+- **Estados finales**: `q0`  
+- **Transiciones**:  
+  - `q0`: `0 → q0`, `1 → q1`  
+  - `q1`: `0 → q1`, `1 → q0`  
+
+**Prueba**:  
+- Acepta: `""`, `00`, `110`, `0101`  
+- Rechaza: `1`, `01`, `111`  
+
+#### **Ejemplo 2: AFD que acepta cadenas con número par de "a"s (ignorando otros símbolos)**  
+- **Alfabeto**: `a,b,c`  
+- **Transiciones**:  
+  - `q0`: `a → q1`, `b/c → q0`  
+  - `q1`: `a → q0`, `b/c → q1`  
+
+**Prueba**:  
+- Acepta: `bb`, `abcba`, `ccc`  
+- Rechaza: `a`, `baab`, `cac`  
+
+---
+
+### **💡 Consejos**  
+- Usa **símbolos únicos** (ej: `a, b` en lugar de `ab, bc`).  
+- Los estados pueden llamarse como quieras (`q0`, `A`, `S1`, etc.).  
+- Si el autómata no funciona, verifica:  
+  - Que **todas las transiciones** estén definidas.  
+  - Que los estados finales estén bien escritos.  
+
+---
+
+**Nota**: Actualiza los ejemplos según los símbolos o estados que uses en tu proyecto.
 
 ## **🛠️ Tecnologías**  
 - **Frontend**:  
