@@ -2,6 +2,9 @@
 ## **🔍 Descripción**  
 Herramienta web interactiva para diseñar, configurar y probar Autómatas Finitos Deterministas (AFD). Permite definir estados, alfabetos, transiciones y evaluar cadenas para verificar su aceptación.
 ---
+### **🌐 Sitio Web**
+https://teal-cobbler-579795.netlify.app/
+---
 
 ## **✨ Características**  
 ✅ **Configuración visual del AFD**:  
