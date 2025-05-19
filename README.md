@@ -1,6 +1,4 @@
 # **📋 Simulador de Autómatas Finitos Deterministas (AFD)**
-![image](https://github.com/user-attachments/assets/32d65b51-e0e2-4755-a8fa-f5c6eb5e8cf0)
-
 ## **🔍 Descripción**  
 Herramienta web interactiva para diseñar, configurar y probar Autómatas Finitos Deterministas (AFD). Permite definir estados, alfabetos, transiciones y evaluar cadenas para verificar su aceptación.
 ---
@@ -58,6 +56,8 @@ simulador-afd/
 ├── main.js             # Lógica del simulador AFD
 └── README.md           # Este archivo
 ```
+🎨 Capturas de Pantalla
+![image](https://github.com/user-attachments/assets/32d65b51-e0e2-4755-a8fa-f5c6eb5e8cf0)
 
 ---
 
