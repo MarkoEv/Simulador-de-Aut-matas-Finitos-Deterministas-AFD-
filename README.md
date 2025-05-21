@@ -88,8 +88,6 @@ https://automatafinito.netlify.app/
 
 ---
 
-**Nota**: Actualiza los ejemplos según los símbolos o estados que uses en tu proyecto.
-
 ## **🛠️ Tecnologías**  
 - **Frontend**:  
   ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)  
