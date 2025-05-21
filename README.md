@@ -117,7 +117,7 @@ simulador-afd/
 ## **🔧 Instalación**  
 1. Clona el repositorio:  
    ```bash
-   git clone https://github.com/tu-usuario/simulador-afd.git
+     https://github.com/MarkoEv/Simulador-de-Automatas-Finitos-Deterministas-AFD.git
    ```
 2. Abre `index.html` en tu navegador.  
    *(No requiere servidor ni instalación de paquetes)*  
